@@ -8,7 +8,8 @@ const chats = [
         cor: '#FF905D',
         numero: 1,
         tempo: 10,
-        imagem: './img/maria.jpg'
+        imagem: './img/maria.jpg',
+        app: './img/whatsapp.svg'
     },
     {
         cliente: 'Daniel Silva',
@@ -17,7 +18,8 @@ const chats = [
         cor:'#13B5B1',
         numero: 2,
         tempo: 30,
-        imagem: './img/hugo.jpg'
+        imagem: './img/hugo.jpg',
+        app: './img/telegram.svg'
     },
     {
         cliente: 'Bruno Adomo',
@@ -26,7 +28,8 @@ const chats = [
         cor:'#28f4ad',
         numero: 3,
         tempo: 30,
-        imagem: './img/joao.jpg'
+        imagem: './img/joao.jpg',
+        app: './img/messenger.svg'
     },
     {
         cliente: 'Viviane Ribeiro',
@@ -35,25 +38,28 @@ const chats = [
         cor:'#1578d2',
         numero: 1,
         tempo: 20,
-        imagem: './img/ana.jpg'
+        imagem: './img/ana.jpg',
+        app: './img/messages.svg'
     },
     {
         cliente: 'Maria Joana',
         mensagem:'Jhonatan diz: A senhora necessita de mais a...',
         atendente: 'Jhonatan',
-        cor:'#fffb59',
+        cor:'#FFCF40',
         numero: 1,
         tempo: 10,
-        imagem: './img/hugo.jpg'
+        imagem: './img/hugo.jpg',
+        app: './img/linkedin.svg'
     },
     {
         cliente: 'Juliana Pereira',
-        mensagem:'Joysi diz: Estarei enviando o comprovant...',
+        mensagem:'Saulo diz: Estarei enviando o comprovant...',
         atendente: 'Saulo',
         cor:'#FF5B5B',
         numero: 1,
         tempo: 40,
-        imagem: './img/maria.jpg'
+        imagem: './img/maria.jpg',
+        app: './img/instagram.svg'
     },
     {
         cliente: 'Henrique Martins',
@@ -62,7 +68,8 @@ const chats = [
         cor:'#ff8e34',
         numero: 1,
         tempo: 30,
-        imagem: './img/joao.jpg'
+        imagem: './img/joao.jpg',
+        app: './img/telegram.svg'
     },
 ]
 
@@ -86,10 +93,10 @@ function criarCards(info){
                     <h2>${info.cliente}</h2>
                     <label class="mensagens">${info.numero}</label>
                     <span class="tempo">Há ${info.tempo} minutos</span>
-                </div>
-            <p>${info.mensagem}</p>
-            
-            </div>
+                    </div>
+                    <p>${info.mensagem}</p>
+                    </div>
+                    <img class="app" src="${info.app}" alt="">
             
             <h2 style="background-color:${info.cor};" class="atendente">
                 <i class="fa-regular fa-user"></i>

@@ -30,6 +30,7 @@ body {
     gap: 20px;
     justify-content: center;
     position: relative;
+    cursor: pointer;
 }
 
 .card img {
@@ -42,7 +43,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 70%;
-    gap: 5px;
+    gap: 10px;
 }
 
 .nome-cliente {
@@ -78,6 +79,11 @@ body {
     color: gray;
 }
 
+.app{
+    display: flex;
+    position: relative;
+    left: 10%;
+}
 
 .atendente {
     display: flex;
@@ -94,6 +100,6 @@ body {
     font-weight: 100;
     font-size: 16px;
     position: absolute;
-    bottom: -10px;
+    bottom: -7px;
     left: 25%;
 }
